@@ -93,12 +93,12 @@ expo start
 
 ---
 
-<h2 id="author">👦 Authors</h2>
+<h2 id="author">👦👩 Authors</h2>
 
-👦 **Augusto Possati <augusto.opossatti@hotmail.com>**
-👦 **Felipe Jonas <felipenjonas@gmail.com>**
-👩 **Gabriella Feliciano <gabriellafeliciano2@gmail.com>**
-👦 **Natan Prado <natan.santos5@fatec.sp.gov.br>**
+- 👦 **Augusto Possati <augusto.opossatti@hotmail.com>**
+- 👦 **Felipe Jonas <felipenjonas@gmail.com>**
+- 👩 **Gabriella Feliciano <gabriellafeliciano2@gmail.com>**
+- 👦 **Natan Prado <natan.santos5@fatec.sp.gov.br>**
 
 
 [Back To The Top](#title)
