@@ -1,20 +1,32 @@
 import React from 'react';
-
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import Landing from './pages/Landing';
-import Create from './pages/Create';
+import Obras from './pages/Obras';
+import ObrasView from './pages/ObrasView';
+import Metadados from './pages/Metadados';
 
-const {Navigator, Screen} = createStackNavigator();
+const AppStack = createStackNavigator();
 
-export default function Routes(){
-  return(
+const Routes = () => {
+  return (
     <NavigationContainer>
-      <Navigator screenOptions={{headerShown: false, cardStyle: {backgroundColor: '#f2f3f4'}}}>
-        <Screen name="LandingPage" component={Landing}/>
-        <Screen name="CreatePage" component={Create}/>
-      </Navigator>
+      <AppStack.Navigator 
+        headerMode="none"
+        screenOptions={{
+          cardStyle: {
+            backgroundColor: '#f0f0f5'
+          }
+        }}
+      >
+        <AppStack.Screen name="Landing" component={Landing}/>
+        <AppStack.Screen name="Obras" component={Obras}/>
+        <AppStack.Screen name="ObrasView" component={ObrasView}/>
+        <AppStack.Screen name="Metadados" component={Metadados}/>
+      </AppStack.Navigator>
     </NavigationContainer>
-  )
-}
+  );
+};
+
+export default Routes;
